@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EsiProject2/1.0.0": {
+        "runtime": {
+          "EsiProject2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EsiProject2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
