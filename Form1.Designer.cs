@@ -32,12 +32,14 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            button2 = new Button();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -72,26 +74,6 @@
             dataGridView1.Size = new Size(539, 309);
             dataGridView1.TabIndex = 3;
             // 
-            // button1
-            // 
-            button1.Location = new Point(646, 35);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 3;
-            button1.Text = "Add Person";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(646, 115);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 4;
-            button2.Text = "Dışa Aktar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // Column1
             // 
             Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -123,11 +105,53 @@
             Column4.Name = "Column4";
             Column4.Width = 125;
             // 
+            // button1
+            // 
+            button1.Location = new Point(646, 48);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 3;
+            button1.Text = "Add Person";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += AddUser;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(646, 374);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 4;
+            button2.Text = "Dışa Aktar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += ExportData;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(646, 104);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 5;
+            button3.Text = "Update User";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += updateUser;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(646, 164);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 29);
+            button4.TabIndex = 6;
+            button4.Text = "Delete User";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += deleteButton;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
@@ -154,5 +178,7 @@
         private DataGridViewTextBoxColumn Column3;
         private Button button2;
         private DataGridViewTextBoxColumn Column4;
+        private Button button3;
+        private Button button4;
     }
 }

@@ -14,3 +14,4 @@ C:\Users\ysf20\source\repos\EsiProject2\EsiProject2\obj\Debug\net8.0-windows\ref
 C:\Users\ysf20\source\repos\EsiProject2\EsiProject2\obj\Debug\net8.0-windows\EsiProject2.pdb
 C:\Users\ysf20\source\repos\EsiProject2\EsiProject2\obj\Debug\net8.0-windows\EsiProject2.genruntimeconfig.cache
 C:\Users\ysf20\source\repos\EsiProject2\EsiProject2\obj\Debug\net8.0-windows\ref\EsiProject2.dll
+C:\Users\ysf20\source\repos\EsiProject2\EsiProject2\obj\Debug\net8.0-windows\EsiProject2.sourcelink.json
