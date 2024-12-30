@@ -63,7 +63,7 @@ namespace EsiProject2
                 string.IsNullOrWhiteSpace(textBox2.Text) ||
                 string.IsNullOrWhiteSpace(textBox3.Text))
             {
-                MessageBox.Show("Please fill in all fields!");
+                MessageBox.Show("Lütfen tüm alanlarý doldurun!");
                 return;
             }
 
@@ -89,7 +89,7 @@ namespace EsiProject2
             textBox2.Clear();
             textBox3.Clear();
 
-            MessageBox.Show("User added successfully!");
+            MessageBox.Show("Kullanýcý eklendi!");
         }
         private void ExportData(object sender, EventArgs e) // Dýþa Aktar
         {
@@ -97,7 +97,7 @@ namespace EsiProject2
             {
                 if (persons.Count == 0)
                 {
-                    MessageBox.Show("No data to export!");
+                    MessageBox.Show("Dýþa aktarýlacak data yok!");
                     return;
                 }
 
@@ -117,7 +117,7 @@ namespace EsiProject2
                 });
 
                 File.WriteAllText(FilePath, json);
-                MessageBox.Show("Data exported successfully!");
+                MessageBox.Show("Data þifrelenerek dýþa aktarýldý!");
             }
             catch (Exception ex)
             {
@@ -125,7 +125,7 @@ namespace EsiProject2
             }
         }
 
-        private void updateUser(object sender, EventArgs e) // update Button
+        private void updateUser(object sender, EventArgs e)
         {
             UpdateUser();
         }
@@ -137,7 +137,7 @@ namespace EsiProject2
                 // Seçili satýr kontrolü
                 if (dataGridView1.SelectedRows.Count == 0)
                 {
-                    MessageBox.Show("Please select a user to update!");
+                    MessageBox.Show("Lütfen güncelenecek kullanýcýyý seçin !");
                     return;
                 }
 
@@ -146,7 +146,7 @@ namespace EsiProject2
                     string.IsNullOrWhiteSpace(textBox2.Text) ||
                     string.IsNullOrWhiteSpace(textBox3.Text))
                 {
-                    MessageBox.Show("Please fill in all fields!");
+                    MessageBox.Show("Lütfen tüm alanlarý doldurun!");
                     return;
                 }
 
@@ -236,13 +236,13 @@ namespace EsiProject2
             {
                 if (dataGridView1.CurrentRow == null)
                 {
-                    MessageBox.Show("Please select a row to delete!");
+                    MessageBox.Show("Silinecek kullanýcýyý seçin!");
                     return;
                 }
 
                 DialogResult result = MessageBox.Show(
-                    "Are you sure you want to delete this record?",
-                    "Confirm Delete",
+                    "Bu kaydý silmek istediðinize emin misiniz?",
+                    "Silme iþlemini doðrula!",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
 
